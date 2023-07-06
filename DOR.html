@@ -1,0 +1,136 @@
+<div class="container">
+<head>
+  <script src="https://kit.fontawesome.com/a24879a822.js" crossorigin="anonymous"></script>
+    
+</head>
+
+    <form class="well form-horizontal" action=" " method="post"  id="dor_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>LSRP Field Training Program - DOR form</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">FTO Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa-solid fa-user-police"></i></span>
+  <input  name="fto_name" placeholder="Firstname Lastname" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >FTO Serial No.</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="fa-sharp fa-regular fa-badge-sheriff"></i></span>
+  <input name="po_name" placeholder="Serial Number" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">PO Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa-solid fa-user-police"></i></span>
+  <input  name="po_name" placeholder="Firstname Lastname" class="form-control"  type="text">
+    </div>
+  </div>
+</div>  
+  
+<div class="form-group">
+  <label class="col-md-4 control-label" >PO Serial No.</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="fa-sharp fa-regular fa-badge-sheriff"></i></span>
+  <input name="po_name" placeholder="Serial Number" class="form-control"  type="text">
+    </div>
+  </div>
+</div>  
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">Report Date</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="fa-solid fa-calendar-days"></i></span>
+  <input name="report_date" placeholder="DD/MMM/YYYY" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phase #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa-solid fa-chart-simple"></i></span>
+  <input name="phase" placeholder="e.g. II-2" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- INFO -->
+  <font size=-5><b>INSTRUCTIONS:</b></font> <font size=-5><b> See <a href=>Appendix 1, Standardized Evaluation Guidelines (SEGs)</a> for how to rate observable behaviors.</b> A rating of <b><font color=#993300>C</font></b> (Competent) is the minimum acceptable score within each category to meet the standard for solo patrol officer. Ratings of <b><font color=#993300>N/I</font></b> (Needs Improvement) or <b><font color=#993300>S</font></b> (Superior) <b><i>require</i></b> a Documented Situation (DS); check <b><font color=#993300>DS</font></b> and describe the related event in the accompanying Event Narrative. Check <b><font color=#993300>N/O</font></b> if behavior is Not Observed or <b><font color=#993300>NRT</font></b> if trainee is Not Responding to Training. Enter Remedial Training Minutes (R/T MIN) as minutes only when applicable (e.g., 1hr, 30 min = 90 min).</font>
+  <br></br>
+      <center><b>RATING BY CATEGORY</b></center>
+  <br></br>
+  
+<!-- Ratings -->
+ 
+<table style="width: 20%">
+            <tbody v-for="(section, _index) in gradingCriterias">
+                <tr>
+                    <th>{{_index}}</th>
+                    <th v-if="Object.keys(gradingCriterias)[0] == _index">S</th>
+                    <th v-if="Object.keys(gradingCriterias)[0] == _index">C</th>
+                    <th v-if="Object.keys(gradingCriterias)[0] == _index">N/I</th>
+                </tr>
+                <tr v-for="(criteria, index) in section">
+                    <td>{{ criteria }}</td>
+                    <td><input class="form-check-input"
+                            :id=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}_0` type="radio"
+                            :name=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}`></td>
+                    <td><input class="form-check-input"
+                            :id=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}_1` type="radio"
+                            :name=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}`></td>
+                    <td><input class="form-check-input"
+                            :id=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}_2` type="radio"
+                            :name=`score_${Object.keys(gradingCriterias).indexOf(_index)}_${index}`></td>
+                </tr>
+            </tbody>
+        </table>  
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Comments</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa-solid fa-pen"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Comments"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="fa-solid fa-thumbs-up"></i> BBcode generated!</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Generate & copy BBcode <span class="fa-solid fa-comment-captions"</span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
