@@ -1,0 +1,205 @@
+[divbox=#eee font=black][aligntable=left,0,0,0,0,transparent,transparent][size=95][b]Field Training Program[/b][/size]
+[size=95](Rev. 10/2021)[/size][/aligntable][aligntable=right,0,0,0,0,transparent,transparent][size=95]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[b][color=#993300]APPENDIX 2[/color][/b][/size][br][size=95][b]⠀⠀⠀⠀⠀⠀⠀⠀⠀Daily Observation Report[/b][/size][/aligntable]
+[br][br]
+[size=95][b]REPORT DATE:[/b][/size] ${moment(new Date(this.ftp_date)).format("DD/MMM/YYYY").toUpperCase()}⠀⠀ [size=95][b]PHASE:[/b][/size] {this.phase}
+[br][table bg=#eeeeee font=black][tr bg=#eeeeee][td colspan=2][size=95][b]Trainee Name[/b] [i](Last, First)[/i][/size][/td][td colspan=2][size=95][b]Serial Number[/b][/size][/td][td colspan=2][size=95][b]FTO Name[/b] [i](Last, First)[/i][/size][/td][td colspan=2][size=95][b]Serial Number[/b][/size][/td][/tr]
+    [tr bg=#eeeeee]
+        [td colspan=2][size=95]${this.p1_name}[/size][/td]
+        [td colspan=2][size=95]${this.p1_serial}[/size][/td]
+
+
+        [td colspan=2][size=95]${this.fto_name}[/size][/td]
+        [td colspan=2][size=95]${this.fto_serial}[/size][/td]
+    [/tr]
+[/table]
+
+[justify][size=95][b]INSTRUCTIONS:[/b][/size] [size=99][b]See [url=link-here]Appendix 1, Standardized Evaluation Guidelines (SEGs)[/url] for how to rate observable behaviors.[/b] A rating of [b][color=#993300]C[/color][/b] (Competent) is the minimum acceptable score within each category to meet the standard for solo patrol officer. Ratings of [b][color=#993300]N/I[/color][/b] (Needs Improvement) or [b][color=#993300]S[/color][/b] (Superior) [b][i]require[/i][/b] a Documented Situation (DS); check [b][color=#993300]DS[/color][/b] and describe the related event in the accompanying Event Narrative. Check [b][color=#993300]N/O[/color][/b] if behavior is Not Observed or [b][color=#993300]NRT[/color][/b] if trainee is Not Responding to Training. Enter Remedial Training Minutes (R/T MIN) as minutes only when applicable (e.g., 1hr, 30 min = 90 min).[/size][/justify]
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[b][size=95]RATING BY CATEGORY[/size][/b]
+[table spacing=1 bg=transparent font=white]
+[tr bg=#006][td color=transparent colspan=2][size=90][b]ATTITUDE[/b][/size][/td][td bg=9eafe1 color=transparent][center][b][size=95]D/S[/size][/b][/center][/td][td bg=#9eafe1 color=transparent][center][b][color=#006][size=95]N/I[/size][/color][/b][/center][/td][td bg=#9eafe1 color=transparent][center][b][color=#006][size=95]C[/size][/color][/b][/center][/td][td bg=#9eafe1 color=transparent][center][b][color=#006][size=95]S[/size][/color][/b][/center][/td][td color=transparent][center][b][size=95]N/O[/size][/b][/center][/td][td color=transparent][center][b][size=95]NRT[/size][/b][/center][/td][td color=transparent][center][b][size=95]R/T MIN[/size][/b][/center][/td][/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]1.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Acceptance of Feedback ⠀⠀[/size][/color][/td]
+        ${scores[0]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]2.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Relationship with Citizens[/size][/color][/td]
+        ${scores[1]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]3.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Appearance[/size][/color][/td]
+        ${scores[2]}
+    [/tr]
+[/table]
+[table spacing=1 bg=transparent font=white]
+    [tr bg=#006]
+        [td color=transparent colspan=2][size=90][b]PERFORMANCE[/b][/size][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]D/S[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]N/I[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]C[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]S[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]N/O[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]NRT[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]R/T MIN[/color][/size][/b][/center][/td]
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]4.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Driving Skill[/size][/color][/td]
+        ${scores[3]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]5.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Field Performance[/size][/color][/td]
+        ${scores[4]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]6.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Investigative Skills[/size][/color][/td]
+        ${scores[5]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]7.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Interview Skills[/size][/color][/td]
+        ${scores[6]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]8.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Officer Safety[/size][/color][/td]
+        ${scores[7]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]9.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Investigative Skills[/size][/color][/td]
+        ${scores[8]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]10.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Problem Solving[/size][/color][/td]
+        ${scores[9]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]11.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Vehicle/Pedestrian Stops[/size][/color][/td]
+        ${scores[10]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]12.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Radio Communication[/size][/color][/td]
+        ${scores[11]}
+    [/tr]
+[/table]
+[table spacing=1 bg=transparent font=white]
+    [tr bg=#006]
+        [td color=transparent colspan=2][size=90][b]KNOWLEDGE[/b][/size][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]D/S[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]N/I[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]C[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]S[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]N/O[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]NRT[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]R/T MIN[/color][/size][/b][/center][/td]
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]13.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Department Policy ⠀⠀⠀⠀⠀[/size][/color][/td]
+        ${scores[12]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]14.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Criminal Law[/size][/color][/td]
+        ${scores[13]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]15.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Criminal Procedure[/size][/color][/td]
+        ${scores[14]}
+    [/tr]
+[/table]
+[table spacing=1 bg=transparent font=white]
+    [tr bg=#006]
+        [td color=transparent colspan=2][size=90][b](( OUT OF CHARACTER ))[/b][/size][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]D/S[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]N/I[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]C[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][color=#006][size=95][color=transparent]S[/size][/color][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]N/O[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]NRT[/color][/size][/b][/center][/td]
+        [td bg=#eee color=transparent][center][b][size=95][color=transparent]R/T MIN[/color][/size][/b][/center][/td]
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]16.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Overall Mindset[/size][/color][/td]
+        ${scores[15]}
+    [/tr]
+
+    [tr bg=#CCC]
+        [td color=transparent][color=black][size=95]17.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Character Portrayal[/size][/color][/td]
+        ${scores[16]}
+    [/tr]
+
+    [tr bg=#eee]
+        [td color=transparent][color=black][size=95]18.[/size][/color][/td]
+        [td color=transparent][color=black][size=95]Passive Roleplay[/size][/color][/td]
+        ${scores[17]}
+    [/tr]
+[/table]
+[hr=#CCC]
+[center][b][color=#CCC][size=95]END OF PAGE[/size][/color][/b][/center]
+[/divbox]
+
+
+[divbox=#eee font=black]
+[table spacing=0 bg=transparent font=white]
+[tr bg=#006]
+[td color=transparent colspan=2][size=95][b]DOCUMENTED SITUATIONS (DS)[/b][/size][/td]
+[/tr][/table]
+
+[size=95][b]NOTE:[/b][/size] [size=99]Any DOR rating of [b][color=#993300]N/I[/color][/b] or [color=#993300][b]S[/b][/color] [b]must[/b] be documented. 1) Identify the event and enter the applicable category number(s) to reference your comments. 2) Explain how the rating was determined. 3) Check the appropriate [b]RT[/b] box and enter the RT date if applicable.[/size]
+
+
+[ol indent=0][*][size=95][b]Category Number(s):[/b][/size] ${this.cat_no1}
+[size=95][b]Event Narrative:[/b][/size] ${this.event1}
+[size=95][b]Remedial Training:[/b][/size] ${this.rt1}
+[br]
+[*][size=95][b]Category Number(s):[/b][/size] ${this.cat_no2}
+[size=95][b]Event Narrative:[/b][/size] ${this.event2}
+[size=95][b]Remedial Training:[/b][/size] ${this.rt2}
+[br]
+[*][size=95][b]Category Number(s):[/b][/size] ${this.cat_no3}
+[size=95][b]Event Narrative:[/b][/size] ${this.event3}
+[size=95][b]Remedial Training:[/b][/size] ${this.rt3}[/ol]
+[br][hr=#CCC]
+[center][b][color=#CCC][size=95]END OF PAGE[/size][/color][/b][/center]
+[/divbox]
+
+[divbox=#eee font=black]
+[table spacing=0 bg=transparent font=white]
+[tr bg=#006]
+[td color=transparent colspan=2][size=95][b]COMMENTS:[/b][/size][/td]
+[/tr][/table]
+
+[list]${this.comments}[/list]
+
+
+[center][b][color=#CCC][size=95]END OF PAGE[/size][/color][/b][/center]
+[/divbox]
