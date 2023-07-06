@@ -1,7 +1,7 @@
 [divbox=#eee font=black][aligntable=left,0,0,0,0,transparent,transparent][size=95][b]Field Training Program[/b][/size]
 [size=95](Rev. 10/2021)[/size][/aligntable][aligntable=right,0,0,0,0,transparent,transparent][size=95]⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[b][color=#993300]APPENDIX 2[/color][/b][/size][br][size=95][b]⠀⠀⠀⠀⠀⠀⠀⠀⠀Daily Observation Report[/b][/size][/aligntable]
 [br][br]
-[size=95][b]REPORT DATE:[/b][/size] ${moment(new Date(this.ftp_date)).format("DD/MMM/YYYY").toUpperCase()}⠀⠀ [size=95][b]PHASE:[/b][/size] {this.phase}
+[size=95][b]REPORT DATE:[/b][/size] ${this.ftp_date}⠀⠀ [size=95][b]PHASE:[/b][/size] {this.phase}
 [br][table bg=#eeeeee font=black][tr bg=#eeeeee][td colspan=2][size=95][b]Trainee Name[/b] [i](Last, First)[/i][/size][/td][td colspan=2][size=95][b]Serial Number[/b][/size][/td][td colspan=2][size=95][b]FTO Name[/b] [i](Last, First)[/i][/size][/td][td colspan=2][size=95][b]Serial Number[/b][/size][/td][/tr]
     [tr bg=#eeeeee]
         [td colspan=2][size=95]${this.p1_name}[/size][/td]
